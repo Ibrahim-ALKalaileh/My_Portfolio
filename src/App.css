@@ -230,8 +230,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/************ Banner Css ************/
-.banner {
+/************ Hero Css ************/
+.hero {
   margin-top: 0;
   padding: 260px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
@@ -239,7 +239,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.banner .tagline {
+.hero .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
@@ -249,7 +249,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 16px;
   display: inline-block;
 }
-.banner h1 {
+.hero h1 {
   font-size: 65px;
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -257,14 +257,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
-.banner p {
+.hero p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
-.banner button {
+.hero button {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
@@ -273,16 +273,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   align-items: center;
 }
-.banner button svg {
+.hero button svg {
   font-size: 25px;
   margin-left: 10px;
   transition: 0.3s ease-in-out;
   line-height: 1;
 }
-.banner button:hover svg {
+.hero button:hover svg {
   margin-left: 25px;
 }
-.banner img {
+.hero img {
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
