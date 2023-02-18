@@ -3,6 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { RiMailSendLine } from "react-icons/ri";
+import { RiPhoneLine } from "react-icons/ri";
+
 
 const Contact_Form = () => {
   const formInitialDetails = {
@@ -36,7 +39,7 @@ const Contact_Form = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ succes: true, message: 'Message sent successfully'});
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
@@ -58,7 +61,11 @@ const Contact_Form = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__bounce" : ""}>
-                <h2>Get In Touch</h2>
+                <h2 >Get In Touch</h2>
+                <h5 ><RiMailSendLine/>&nbsp;  Ibrahim.Kalaileh@gmail.com</h5> <br/>
+                <br/>
+                <h5><RiPhoneLine/>&nbsp;  +962788259446 </h5><br/> <br/>
+
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
