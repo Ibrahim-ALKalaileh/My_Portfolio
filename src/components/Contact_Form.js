@@ -4,7 +4,7 @@ import contactImg from "../assets/img/contact-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
-export const Contact = () => {
+const Contact_Form = () => {
   const formInitialDetails = {
     firstName: '',
     lastName: '',
@@ -50,14 +50,14 @@ export const Contact = () => {
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us"/>
+                <img className={isVisible ? "animate__animated animate__lightSpeedInLeft" : ""} src={contactImg} alt="Contact Us"/>
               }
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
             <TrackVisibility>
               {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                <div className={isVisible ? "animate__animated animate__bounce" : ""}>
                 <h2>Get In Touch</h2>
                 <form onSubmit={handleSubmit}>
                   <Row>
@@ -75,7 +75,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      <button type="submit" className="rounded"><span>{buttonText}</span></button>
                     </Col>
                     {
                       status.message &&
@@ -93,3 +93,4 @@ export const Contact = () => {
     </section>
   )
 }
+export default Contact_Form

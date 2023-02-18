@@ -1,6 +1,5 @@
 
 import { Container,Row ,Col} from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from '../assets/img/header-img.svg';
 import React from "react";
 
@@ -14,11 +13,11 @@ function Hero() {
             <Row className='align-items-center'>
                 <Col xs={12} md={6} xl={7}>
                     <span className="tagline">
-                    Hi , Im Ibrahim  
+                    Hi , Im Ibrahim
                     </span>
                     <h1>{`Full-Stack Web and Mobile Developer `} </h1>
                     <p> </p>
-                    <button onClick={''}>Lets Connect <ArrowRightCircle size={25}/></button>
+                    
                 </Col>
                 <Col xs={12} md={6} xl={5}>
                     <img src={headerImg} alt='Hero Img'/>

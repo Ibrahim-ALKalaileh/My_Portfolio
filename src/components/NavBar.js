@@ -46,13 +46,15 @@ function NavBar() {
         </Nav>
         <span className='navbar-text'>
             <div className='social-icon'>
-                <a href='#'> <img src={navIcon1} alt="" /></a>
-                <a href='#'> <img src={navIcon2} alt="" /></a>
+                <a href='https://www.linkedin.com/in/ibrahim-al-kalaileh-05845a1b4/'> <img src={navIcon1} alt="" /></a>
+                <a href='https://web.facebook.com/ibrahim.x.Ai.x'> <img src={navIcon2} alt="" /></a>
                 <a href='#'> <img src={navIcon3} alt="" /></a>
             </div>
-            <button className='vvd' onClick={''}>
+            <Nav.Link href="#connect" className={activeLink==='connect' ? 'active navbar-link': 'navbar-link'} onClick={()=>onUpdateActiveLink('connect')}>
+            <button className='rounded' onClick={()=>onUpdateActiveLink('contact')}>
                 <span>Let's Connect</span>
             </button>
+            </Nav.Link> 
         </span>
       </Navbar.Collapse>
     </Container>
