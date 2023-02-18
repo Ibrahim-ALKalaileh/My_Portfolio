@@ -511,7 +511,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #fff;
   padding: 14px 48px;
   font-size: 18px;
-  margin-top: 25px;
+  margin-top: 20px;
   border-radius: 0;
   position: relative;
   transition: 0.3s ease-in-out;
@@ -529,9 +529,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 0;
   height: 100%;
   position: absolute;
+  border-radius: 4px;
   top: 0;
   left: 0;
   z-index: 0;
+
   transition: 0.3s ease-in-out;
 }
 .contact form button:hover::before {

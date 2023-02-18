@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Hero from './components/Hero';
 import Skills from './components/Skills.js';
 import Projects from './components/projects';
+import Contact_Form from './components/Contact_Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Hero/>
       <Skills/>
       <Projects/>
+      <Contact_Form/>
     </div>
   );
 }
